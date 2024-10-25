@@ -6,6 +6,7 @@ export default defineConfig(async () => {
   const unocss = await import("unocss/vite").then((i) => i.default);
 
   return {
+    envDir: "./env",
     plugins: [uni(), unocss()],
   };
 });
